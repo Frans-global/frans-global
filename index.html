@@ -1,91 +1,83 @@
 <!DOCTYPE html><html lang="fr">
 <head>
-  <!-- Redirection automatique selon la langue du navigateur -->
+  <!-- Redirection automatique selon la langue du navigateur (FR ➜ EN) -->
   <script>
     const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('en')) {
-      window.location.href = "index-en.html";
-    }
+    if (userLang.startsWith('en')) window.location.href = 'index-en.html';
   </script>
   <!-- Métadonnées de base -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="uTVQZX66qgRvVFLeamvNoY5jd83_ekFrl86vu0LkniU" />
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Formations professionnelles pratiques à Kirumba en langues, numérique, entrepreneuriat et artisanat. Développez vos compétences pour réussir.">
-  <meta name="keywords" content="formation Kirumba, apprentissage pratique, FRANS GLOBAL, plateforme professionnelle, langues, numérique, artisanat, entrepreneuriat, formation RDC">
-  <meta name="author" content="FRANS GLOBAL">
-  <meta name="language" content="French">
-  <title>FRANS GLOBAL - Compagnie de Formation à Kirumba</title>
-  <!-- Open Graph pour réseaux sociaux -->
-  <meta property="og:title" content="FRANS GLOBAL - Libérez votre potentiel">
-  <meta property="og:description" content="Formations pratiques et accessibles à Kirumba pour construire votre avenir.">
-  <meta property="og:image" content="https://frans-global.github.io/frans-global/assets/logo.png">
-  <meta property="og:url" content="https://frans-global.github.io/frans-global/">
-  <meta property="og:type" content="website">
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FRANS GLOBAL - Plateforme de formation à Kirumba">
-  <meta name="twitter:description" content="Des formations concrètes pour vous aider à entreprendre et évoluer.">
-  <meta name="twitter:image" content="https://frans-global.github.io/frans-global/assets/logo.png">
-  <link rel="icon" type="image/png" href="bleulogo.png">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TQKX6SZV8"></script>
-  <script>
+  <meta name="description" content="Formations pratiques et services numériques à Kirumba : langues, motivation, entrepreneuriat, numérique… Développez vos compétences avec FRANS GLOBAL." />
+  <meta name="keywords" content="FRANS GLOBAL, formation Kirumba, développement personnel, langues, numérique, entrepreneuriat, RDC" />
+  <meta name="author" content="FRANS GLOBAL" />  <title>FRANS GLOBAL – Plateforme de formation à Kirumba</title>  <!-- Open‑Graph / Twitter -->  <meta property="og:title" content="FRANS GLOBAL – Libérez votre potentiel" />
+  <meta property="og:description" content="Formations et services pour construire votre avenir." />
+  <meta property="og:image" content="https://frans-glob.github.io/images/images/logo%20Frans%20global.jpg" />
+  <meta property="og:url" content="https://frans-glob.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FRANS GLOBAL – Plateforme de formation" />
+  <meta name="twitter:description" content="Des formations concrètes et un accompagnement sur‑mesure à Kirumba." />
+  <meta name="twitter:image" content="https://frans-glob.github.io/images/images/logo%20Frans%20global.jpg" />  <!-- Favicon et feuille de style principale -->  <link rel="icon" href="images/images/logo%20Frans%20global.jpg" type="image/png" />
+  <link rel="stylesheet" href="style.css" />  <!-- Google Analytics -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TQKX6SZV8"></script>  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
     gtag('config', 'G-8TQKX6SZV8');
-  </script>
-  <!-- Fin Google Analytics -->
-</head>
+  </script></head>
 <body>
-  <header style="background-image: url('motivation.jpg');">
-    <img src="bleulogo.png" alt="Logo FRANS GLOBAL" />
-    <h1>FRANS GLOBAL</h1>
-    <p>Libérez votre potentiel – Transformez votre vie</p>
-  </header>
-  <nav>
+  <!-- ===== HEADER ===== -->
+  <header id="top-header">
+    <img src="images/images/logo%20Frans%20global.jpg" alt="Logo FRANS GLOBAL" height="80" />
+    <h1>FRANS GLOBAL</h1>
+    <p>Libérez votre potentiel – Transformez votre vie</p>
+  </header>  <!-- ===== NAV ===== -->  <nav>
     <a href="index.html">Français</a>
     <a href="index-en.html">English</a>
     <a href="formations.html">Formations</a>
     <a href="https://wa.me/243853615905" target="_blank">WhatsApp</a>
-  </nav>
-  <main>
+  </nav>  <!-- ===== MAIN ===== -->  <main>
+    <!-- CAROUSEL -->
     <div class="carousel">
-      <img src="team.jpg" alt="Équipe">
-      <img src="motivation.jpg" alt="Motivation">
-      <img src="linqua.jpg" alt="Langues">
-      <img src="franck.jpg" alt="Formateur">
-    </div>
-    <section class="hero">
-      <h2>Gagnez dès aujourd'hui</h2>
-      <ul>
-        <li><a href="ressources.html">📘 Téléchargez nos ressources gratuites</a></li>
-        <li><a href="services.html">🛠️ Nos services</a></li>
-        <li><a href="gagner-en-ligne.html">💸 Gagner de l'argent en ligne</a></li>
-      </ul>
-    </section>
-    <section class="hero">
-      <h2>Découvrez une formation pratique adaptée aux réalités africaines</h2>
-      <p>Nous vous dotons de compétences concrètes pour bâtir une carrière durable ou créer votre entreprise. Nos formations sont conçues pour répondre aux besoins locaux.</p>
-      <a class="btn-main" href="formations.html">Nos Formations</a>
-    </section>
-    <section class="services" style="margin-top:40px;">
-      <h2 style="font-size:32px;color:#004080;text-align:center;margin-bottom:20px;">🚀 <strong>NOS&nbsp;SERVICES</strong> 🚀</h2>
-      <div style="font-size:18px;line-height:1.6;">
-        <h3>1. 🌱 <strong>Développement personnel et motivation</strong></h3>
-        <ul>
-          <li>🔸 Coaching de vie – confiance en soi, gestion du temps, objectifs</li>
-          <li>🔸 Motivation, vision et orientation de carrière</li>
-          <li>🔸 Accompagnement personnalisé</li>
-        </ul>
-        <p><em>➡ Objectif : Éveiller le potentiel intérieur et réveiller l’ambition.</em></p><h3>2. 🌍 <strong>Formation en langues</strong></h3>
+      <img src="images/images/langue.jpg"           alt="Apprentissage des langues" />
+      <img src="images/images/informatique_africain.jpg.jpg" alt="Formation numérique" />
+      <img src="images/images/Franckson%20inspiring%20ideas.png" alt="Inspiration" />
+      <img src="images/images/Franck%20profile.png"  alt="Profil du formateur" />
+    </div><!-- HERO : Gagner dès aujourd'hui -->
+<section class="hero">
+  <h2>Gagnez dès aujourd'hui</h2>
+  <ul>
+    <li><a href="ressources.html">📘 Téléchargez nos ressources gratuites</a></li>
+    <li><a href="services.html">🛠️ Nos services</a></li>
+    <li><a href="gagner-en-ligne.html">💸 Gagner de l'argent en ligne</a></li>
+  </ul>
+</section>
+
+<!-- HERO : Présentation formations -->
+<section class="hero">
+  <h2>Découvrez une formation pratique adaptée aux réalités africaines</h2>
+  <p>Nous vous dotons de compétences concrètes pour bâtir une carrière durable ou créer votre entreprise.</p>
+  <a class="btn-main" href="formations.html">Nos Formations</a>
+</section>
+
+<!-- NOS SERVICES (insertion précédente) -->
+<section class="services" style="margin-top:40px;">
+  <h2 style="font-size:32px;color:#004080;text-align:center;margin-bottom:20px;">🚀 <strong>NOS SERVICES</strong> 🚀</h2>
+  <div style="font-size:18px;line-height:1.6;">
+    <h3>1. 🌱 <strong>Développement personnel et motivation</strong></h3>
+    <ul>
+      <li>🔸 Coaching de vie – confiance en soi, gestion du temps, objectifs</li>
+      <li>🔸 Motivation, vision et orientation de carrière</li>
+      <li>🔸 Accompagnement personnalisé</li>
+    </ul>
+    <p><em>➡ Objectif : Éveiller le potentiel intérieur et réveiller l’ambition.</em></p>
+
+    <h3>2. 🌍 <strong>Formation en langues</strong></h3>
     <ul>
       <li>🔸 Anglais pratique (débutant à avancé)</li>
       <li>🔸 Français professionnel</li>
-      <li>🔸 Swahili&nbsp;/ Lingala selon la zone</li>
+      <li>🔸 Swahili / Lingala selon la zone</li>
       <li>🔸 Préparation à la communication internationale</li>
     </ul>
     <p><em>➡ Objectif : Offrir des compétences linguistiques pour l’emploi, les affaires et l’expansion.</em></p>
@@ -97,83 +89,59 @@
       <li>🔸 Création de visuels, CV et flyers (Canva)</li>
       <li>🔸 Création de comptes email, pages Facebook, YouTube…</li>
     </ul>
-    <p><em>➡ Objectif : Former des jeunes au numérique pratique et utile avec ou sans ordinateur.</em></p>
+    <p><em>➡ Objectif : Former des jeunes au numérique pratique, avec ou sans ordinateur.</em></p>
 
-    <h3>4. 🧑‍💼 <strong>Assistance numérique et services à distance</strong></h3>
+    <h3>4. 🧑‍💼 <strong>Assistance numérique & services à distance</strong></h3>
     <ul>
-      <li>🔸 Services d’assistant virtuel (saisie, traduction, conception de documents)</li>
+      <li>🔸 Assistant virtuel : saisie, traduction, conception de documents</li>
       <li>🔸 Gestion de pages, rédaction, mise en page de projets</li>
       <li>🔸 Accompagnement administratif ou projets à distance</li>
     </ul>
     <p><em>➡ Objectif : Proposer des services rémunérables et développer l’autonomie professionnelle.</em></p>
 
-    <h3>5. 📊 <strong>Entrepreneuriat et management</strong></h3>
+    <h3>5. 📊 <strong>Entrepreneuriat & management</strong></h3>
     <ul>
-      <li>🔸 Formation en lancement de petits business</li>
-      <li>🔸 Élaboration de projet, business plan, gestion de micro‑entreprise</li>
-      <li>🔸 E‑commerce, marketing digital de base, stratégies d’autofinancement</li>
+      <li>🔸 Lancement de petits business</li>
+      <li>🔸 Business plan, gestion de micro‑entreprise</li>
+      <li>🔸 E‑commerce, marketing digital de base</li>
     </ul>
     <p><em>➡ Objectif : Créer une nouvelle génération d’entrepreneurs responsables et indépendants.</em></p>
 
-    <h3>🧩 <strong>BONUS – Services complémentaires</strong></h3>
+    <h3>🧩 <strong>BONUS – Services complémentaires</strong></h3>
     <ul>
-      <li>Traductions (Français ↔ Anglais, Swahili…)</li>
+      <li>Traductions (Français ↔ Anglais, Swahili…)</li>
       <li>Création de documents professionnels</li>
       <li>Suivi individuel par WhatsApp</li>
       <li>Accès à des supports PDF, vidéos et guides pratiques</li>
     </ul>
   </div>
 </section>
+
+<!-- FORMULAIRE DE CONTACT -->
 <section class="contact">
-  <h2>📋 Vous avez un rêve, une passion ou un projet ?</h2>
-  <p>Chez FRANS GLOBAL, nous croyons en votre potentiel. Posez vos questions, inscrivez-vous ou partagez votre idée. Ce formulaire est peut-être votre premier pas !</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn-zrarw9BvU0SzRG-RAiqp3k7t5JsXPYFfdaF4MiqD5pQqA/viewform?usp=dialog">Chargement…</iframe>
-  <p style="text-align: center;">
-    <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank">📲 Contactez-nous sur WhatsApp</a>
+  <h2>📋 Vous avez un rêve ou un projet ?</h2>
+  <p>Chez FRANS GLOBAL, nous croyons en votre potentiel. Partagez votre idée, inscrivez‑vous ou posez vos questions !</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn-zrarw9BvU0SzRG-RAiqp3k7t5JsXPYFfdaF4MiqD5pQqA/viewform?usp=dialog" title="Formulaire d'inscription FRANS GLOBAL" loading="lazy">Chargement…</iframe>
+  <p style="text-align:center">
+    <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank">📲 Contactez‑nous sur WhatsApp</a>
   </p>
 </section>
-<section id="actualites" style="padding: 20px; background-color: #f8f8f8;">
-  <h2 style="text-align: center;">📰 Actualités récentes</h2>
-  <div id="contenu-actus">Chargement...</div>
+
+<!-- ACTUALITÉS -->
+<section id="actualites" style="padding:20px;background:#f8f8f8;">
+  <h2 style="text-align:center">📰 Actualités récentes</h2>
+  <div id="contenu-actus">Loading…</div>
 </section>
 
-  </main>
-  <footer>
-    &copy; 2025 FRANS GLOBAL | Tous droits réservés
-  </footer>
-  <script>
-    function estEncoreValide(dateActu, joursValides = 30) {
-      const aujourdHui = new Date();
-      const dateAComparer = new Date(dateActu);
-      const diffTemps = aujourdHui - dateAComparer;
-      const diffJours = diffTemps / (1000 * 60 * 60 * 24);
-      return diffJours <= joursValides;
-    }fetch('actualites.json')
-  .then(response => response.json())
-  .then(data => {
-    const zoneActus = document.getElementById('contenu-actus');
-    const actusFiltrees = data.filter(actu => estEncoreValide(actu.date));
-
-    if (actusFiltrees.length === 0) {
-      zoneActus.innerHTML = "<p style='text-align:center;'>Aucune actualité récente.</p>";
-    } else {
-      actusFiltrees.forEach(actu => {
-        const bloc = document.createElement('div');
-        bloc.style = "margin: 20px auto; padding: 15px; max-width: 600px; background: white; border-left: 5px solid #007bff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px;";
-        bloc.innerHTML = `
-          <h3 style="margin-bottom: 5px;">${actu.titre}</h3>
-          <small style="color: #666;">Publié le ${actu.date}</small>
-          <p style="margin-top: 10px;">${actu.contenu}</p>
-        `;
-        zoneActus.appendChild(bloc);
-      });
+  </main>  <!-- ===== FOOTER ===== -->  <footer>&copy; 2025&nbsp;FRANS GLOBAL | Tous droits réservés</footer>  <!-- ===== SCRIPTS ===== -->  <script>
+    /* ==== Rotation d'images de fond du header ==== */
+    const bgImages = [
+      'images/images/management.jpg',
+      'images/images/informatique_africain.jpg.jpg',
+      'images/images/Franckson%20office.jpg'
+    ];
+    let current = 0;
+    function rotateBackground() {
+      document.getElementById('top-header').style.backgroundImage = `url('${bgImages[current]}')`;
+      current = (current + 1) % bgImages.length;
     }
-  })
-  .catch(error => {
-    document.getElementById('contenu-actus').innerHTML = "<p style='color:red;'>Erreur de chargement des actualités.</p>";
-    console.error("Erreur lors du chargement des actualités :", error);
-  });
-
-  </script>
-</body>
-  </html>
