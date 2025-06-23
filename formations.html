@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formations - FRANS GLOBAL</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,27 +25,20 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
+      flex-wrap: wrap;
     }
     .nav-left, .nav-right {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
     }
-    .nav-left a {
+    .nav-left a, .nav-right a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 8px 10px;
       font-weight: bold;
     }
-    .nav-left a:hover {
-      text-decoration: underline;
-    }
-    .nav-right a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    .nav-right a:hover {
+    .nav-left a:hover, .nav-right a:hover {
       text-decoration: underline;
     }
     main {
@@ -90,18 +83,22 @@
   
   <nav>
     <div class="nav-left">
-      <a href="index.html">Accueil</a>
+      <a href="index.html">🏠 Accueil</a>
     </div>
     <div class="nav-right">
-      <a href="formations.html">Formations</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXMjvETjLUCoxnBhV3FA09-42dNh2Aghk0DIeaBrPD2BBZaA/viewform?usp=dialog" target="_blank">Inscription gratuite</a>
+      <a href="formations.html">📚 Formations</a>
+      <a href="services.html">🛠️ Services</a>
+      <a href="ressources.html">📘 Ressources</a>
+      <a href="gagner-en-ligne.html">💰 Gagner en ligne</a>
+      <a href="index-en.html">🌐 English</a>
+      <a href="https://wa.me/243853615905" target="_blank">📲 WhatsApp</a>
     </div>
   </nav>
   
   <main>
     <section>
       <h2>1. Langues (Français, Anglais, Swahili, Lingala)</h2>
-      <img src="langue.jpg" alt="Formation en langues">
+      <img src="images/langues.jpg" alt="Formation en langues" />
       <p>Apprenez à parler et écrire plusieurs langues locales et internationales. Idéal pour les étudiants, voyageurs, professionnels et entrepreneurs.</p>
       <ul>
         <li>Compétences : communication, compréhension écrite et orale</li>
@@ -113,7 +110,7 @@
 
     <section>
       <h2>2. Informatique de base et bureautique</h2>
-      <img src="informatique_africain.jpg.jpg" alt="Informatique de base">
+      <img src="images/informatique.jpg" alt="Informatique de base" />
       <p>Maîtrisez l’utilisation de l’ordinateur et des logiciels bureautiques comme Word, Excel, PowerPoint et Internet.</p>
       <ul>
         <li>Compétences : saisie, gestion de documents, présentations</li>
@@ -125,7 +122,7 @@
 
     <section>
       <h2>3. Création de contenus numériques</h2>
-      <img src="contenus.jpg" alt="Création de contenus numériques">
+      <img src="images/contenus-designs.jpg" alt="Création de contenus numériques" />
       <p>Devenez créateur de contenus vidéo, audio, visuels pour réseaux sociaux, publicité et e-commerce.</p>
       <ul>
         <li>Compétences : montage vidéo, design, publication</li>
@@ -137,7 +134,7 @@
 
     <section>
       <h2>4. Services en ligne et assistance virtuelle</h2>
-      <img src="assistance.jpg" alt="Services numériques">
+      <img src="images/assistance.jpg" alt="Services numériques" />
       <p>Travaillez depuis chez vous comme assistant virtuel, community manager, télévendeur ou support client.</p>
       <ul>
         <li>Compétences : communication digitale, gestion de pages, support client</li>
@@ -149,7 +146,7 @@
 
     <section>
       <h2>5. Compétences entrepreneuriales</h2>
-      <img src="management.jpg" alt="Entrepreneuriat en Afrique">
+      <img src="images/management.jpg" alt="Entrepreneuriat en Afrique" />
       <p>Apprenez à créer, gérer et développer une petite entreprise. Transformez vos idées en projets durables.</p>
       <ul>
         <li>Compétences : planification, gestion, marketing local</li>
@@ -169,5 +166,4 @@
     &copy; 2025 FRANS GLOBAL | Tous droits réservés
   </footer>
 </body>
-  </html>
-  
+      </html>
