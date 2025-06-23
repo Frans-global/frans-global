@@ -1,115 +1,217 @@
 <!DOCTYPE html><html lang="fr">
 <head>
-  <!-- Redirection automatique selon la langue du navigateur (FR ➜ EN) -->
-  <script>
-    const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('en')) window.location.href = 'index-en.html';
-  </script>
-  <!-- Métadonnées de base -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="uTVQZX66qgRvVFLeamvNoY5jd83_ekFrl86vu0LkniU" />
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Formations pratiques et services numériques à Kirumba : langues, motivation, entrepreneuriat, numérique… Développez vos compétences avec FRANS GLOBAL." />
-  <meta name="keywords" content="FRANS GLOBAL, formation Kirumba, développement personnel, langues, numérique, entrepreneuriat, RDC" />
-  <meta name="author" content="FRANS GLOBAL" />  <title>FRANS GLOBAL – Plateforme de formation à Kirumba</title>  <!-- Open‑Graph / Twitter -->  <meta property="og:title" content="FRANS GLOBAL – Libérez votre potentiel" />
-  <meta property="og:description" content="Formations et services pour construire votre avenir." />
-  <meta property="og:image" content="https://frans-glob.github.io/images/images/logo%20Frans%20global.jpg" />
-  <meta property="og:url" content="https://frans-glob.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FRANS GLOBAL – Plateforme de formation" />
-  <meta name="twitter:description" content="Des formations concrètes et un accompagnement sur‑mesure à Kirumba." />
-  <meta name="twitter:image" content="https://frans-glob.github.io/images/images/logo%20Frans%20global.jpg" />  <!-- Favicon et feuille de style principale -->  <link rel="icon" href="images/images/logo%20Frans%20global.jpg" type="image/png" />
-  <link rel="stylesheet" href="style.css" />  <!-- Google Analytics -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TQKX6SZV8"></script>  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-8TQKX6SZV8');
-  </script></head>
+  <meta name="description" content="Formations professionnelles pratiques en RDC en langues, numérique, entrepreneuriat et artisanat. Développez vos compétences pour réussir.">
+  <meta name="keywords" content="formation RDC, apprentissage pratique, FRANS GLOBAL, plateforme professionnelle, langues, numérique, artisanat, entrepreneuriat, formation RDC">
+  <meta name="author" content="FRANS GLOBAL">
+  <meta name="language" content="French">
+  <title>FRANS GLOBAL - Compagnie de Formation en RDCongo</title>
+  <meta property="og:title" content="FRANS GLOBAL - Libérez votre potentiel">
+  <meta property="og:description" content="Formations pratiques et accessibles En RDC pour construire votre avenir.">
+  <meta property="og:image" content="images/images/franckson-profile-fb.png">
+  <meta property="og:url" content="https://frans-glob.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FRANS GLOBAL - Plateforme de formation En RDC">
+  <meta name="twitter:description" content="Des formations concrètes pour vous aider à entreprendre et évoluer.">
+  <meta name="twitter:image" content="images/images/franckson-profile-fb.png">
+  <link rel="icon" type="image/png" href="images/images/franckson-profile-fb.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px 40px;
+      text-align: center;
+      position: relative;
+      transition: background-image 1s ease-in-out;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #002d5a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0;
+      scroll-behavior: smooth;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel img {
+      scroll-snap-align: center;
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .hero h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    .hero ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .hero ul li {
+      margin: 10px 0;
+    }
+    .hero ul li a {
+      font-size: 18px;
+      color: #002d5a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero ul li a:hover {
+      text-decoration: underline;
+    }
+    .services h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
 <body>
-  <!-- ===== HEADER ===== -->
   <header id="top-header">
-    <img src="images/images/logo%20Frans%20global.jpg" alt="Logo FRANS GLOBAL" height="80" />
-    <h1>FRANS GLOBAL</h1>
-    <p>Libérez votre potentiel – Transformez votre vie</p>
-  </header>  <!-- ===== NAV ===== -->  <nav>
+    <img src="images/images/franckson-profile-fb.png" alt="Logo officiel de la plateforme FRANS GLOBAL">
+    <h1>FRANS GLOBAL</h1>
+    <p>Libérez votre potentiel – Transformez votre vie</p>
+  </header>
+  <nav>
     <a href="index.html">Français</a>
     <a href="index-en.html">English</a>
     <a href="formations.html">Formations</a>
     <a href="https://wa.me/243853615905" target="_blank">WhatsApp</a>
-  </nav>  <!-- ===== MAIN ===== -->  <main>
-    <!-- CAROUSEL -->
+  </nav>
+  <main>
     <div class="carousel">
-      <img src="images/images/langue.jpg"           alt="Apprentissage des langues" />
-      <img src="images/images/informatique_africain.jpg.jpg" alt="Formation numérique" />
-      <img src="images/images/Franckson%20inspiring%20ideas.png" alt="Inspiration" />
-      <img src="images/images/Franck%20profile.png"  alt="Profil du formateur" />
-    </div><!-- HERO : Gagner dès aujourd'hui -->
-<section class="hero">
-  <h2>Gagnez dès aujourd'hui</h2>
-  <ul>
-    <li><a href="ressources.html">📘 Téléchargez nos ressources gratuites</a></li>
-    <li><a href="services.html">🛠️ Nos services</a></li>
-    <li><a href="gagner-en-ligne.html">💸 Gagner de l'argent en ligne</a></li>
-  </ul>
-</section>
+      <img src="images/images/contenus-designs.jpg" alt="Designs">
+      <img src="images/images/franck-inspiring-ideas.png" alt="Inspiration">
+      <img src="images/images/francksiwatulaformation.png" alt="Formation">
+      <img src="images/images/franckson-ft.png" alt="Franckson FT">
+      <img src="images/images/franckson-office.jpg" alt="Bureau Franckson">
+      <img src="images/images/franckson-profile-fb.png" alt="Profil Facebook">
+      <img src="images/images/franckson-tel.png" alt="Téléphone Franckson">
+    </div>
 
-<!-- HERO : Présentation formations -->
-<section class="hero">
-  <h2>Découvrez une formation pratique adaptée aux réalités africaines</h2>
-  <p>Nous vous dotons de compétences concrètes pour bâtir une carrière durable ou créer votre entreprise.</p>
-  <a class="btn-main" href="formations.html">Nos Formations</a>
-</section>
+    <!-- HERO : Gagner dès aujourd'hui -->
+    <section class="hero">
+      <h2>Gagnez dès aujourd'hui</h2>
+      <ul>
+        <li><a href="ressources.html">📘 Téléchargez nos ressources gratuites</a></li>
+        <li><a href="services.html">🛠️ Nos services</a></li>
+        <li><a href="gagner-en-ligne.html">💸 Gagner de l'argent en ligne</a></li>
+      </ul>
+    </section>
 
-<!-- NOS SERVICES (insertion précédente) -->
+    <!-- HERO : Présentation formations -->
+    <section class="hero">
+      <h2>Découvrez une formation pratique adaptée aux réalités africaines</h2>
+      <p style="text-align:center;">Nous vous dotons de compétences concrètes pour bâtir une carrière durable ou créer votre entreprise.</p>
+      <p style="text-align:center;"><a class="btn-main" href="formations.html">Nos Formations</a></p>
+    </section>
+
 <section class="services" style="margin-top:40px;">
-  <h2 style="font-size:32px;color:#004080;text-align:center;margin-bottom:20px;">🚀 <strong>NOS SERVICES</strong> 🚀</h2>
+  <h2>🚀 <strong>NOS SERVICES</strong> 🚀</h2>
   <div style="font-size:18px;line-height:1.6;">
-    <h3>1. 🌱 <strong>Développement personnel et motivation</strong></h3>
+    <h3 style="text-align:center;">1. 🌱 <strong>Développement personnel et motivation</strong></h3>
     <ul>
       <li>🔸 Coaching de vie – confiance en soi, gestion du temps, objectifs</li>
       <li>🔸 Motivation, vision et orientation de carrière</li>
       <li>🔸 Accompagnement personnalisé</li>
     </ul>
-    <p><em>➡ Objectif : Éveiller le potentiel intérieur et réveiller l’ambition.</em></p>
+    <p><em>➡ Objectif : Éveiller le potentiel intérieur et réveiller l’ambition.</em></p>
 
-    <h3>2. 🌍 <strong>Formation en langues</strong></h3>
+    <h3 style="text-align:center;">2. 🌍 <strong>Formation en langues</strong></h3>
     <ul>
       <li>🔸 Anglais pratique (débutant à avancé)</li>
       <li>🔸 Français professionnel</li>
-      <li>🔸 Swahili / Lingala selon la zone</li>
+      <li>🔸 Swahili / Lingala selon la zone</li>
       <li>🔸 Préparation à la communication internationale</li>
     </ul>
-    <p><em>➡ Objectif : Offrir des compétences linguistiques pour l’emploi, les affaires et l’expansion.</em></p>
+    <p><em>➡ Objectif : Offrir des compétences linguistiques pour l’emploi, les affaires et l’expansion.</em></p>
 
-    <h3>3. 💻 <strong>Compétences numériques et création de contenu</strong></h3>
+    <h3 style="text-align:center;">3. 💻 <strong>Compétences numériques et création de contenu</strong></h3>
     <ul>
       <li>🔸 Initiation à l’informatique (Word, Excel, PowerPoint)</li>
       <li>🔸 Création de sites web simples (GitHub, Canva…)</li>
       <li>🔸 Création de visuels, CV et flyers (Canva)</li>
       <li>🔸 Création de comptes email, pages Facebook, YouTube…</li>
     </ul>
-    <p><em>➡ Objectif : Former des jeunes au numérique pratique, avec ou sans ordinateur.</em></p>
+    <p><em>➡ Objectif : Former des jeunes au numérique pratique, avec ou sans ordinateur.</em></p>
 
-    <h3>4. 🧑‍💼 <strong>Assistance numérique & services à distance</strong></h3>
+    <h3 style="text-align:center;">4. 🧑‍💼 <strong>Assistance numérique & services à distance</strong></h3>
     <ul>
-      <li>🔸 Assistant virtuel : saisie, traduction, conception de documents</li>
+      <li>🔸 Assistant virtuel : saisie, traduction, conception de documents</li>
       <li>🔸 Gestion de pages, rédaction, mise en page de projets</li>
       <li>🔸 Accompagnement administratif ou projets à distance</li>
     </ul>
-    <p><em>➡ Objectif : Proposer des services rémunérables et développer l’autonomie professionnelle.</em></p>
+    <p><em>➡ Objectif : Proposer des services rémunérables et développer l’autonomie professionnelle.</em></p>
 
-    <h3>5. 📊 <strong>Entrepreneuriat & management</strong></h3>
+    <h3 style="text-align:center;">5. 📊 <strong>Entrepreneuriat & management</strong></h3>
     <ul>
       <li>🔸 Lancement de petits business</li>
       <li>🔸 Business plan, gestion de micro‑entreprise</li>
       <li>🔸 E‑commerce, marketing digital de base</li>
     </ul>
-    <p><em>➡ Objectif : Créer une nouvelle génération d’entrepreneurs responsables et indépendants.</em></p>
+    <p><em>➡ Objectif : Créer une nouvelle génération d’entrepreneurs responsables et indépendants.</em></p>
 
-    <h3>🧩 <strong>BONUS – Services complémentaires</strong></h3>
+    <h3 style="text-align:center;">🧩 <strong>BONUS – Services complémentaires</strong></h3>
     <ul>
-      <li>Traductions (Français ↔ Anglais, Swahili…)</li>
+      <li>Traductions (Français ↔ Anglais, Swahili…)</li>
       <li>Création de documents professionnels</li>
       <li>Suivi individuel par WhatsApp</li>
       <li>Accès à des supports PDF, vidéos et guides pratiques</li>
@@ -117,27 +219,31 @@
   </div>
 </section>
 
-<!-- FORMULAIRE DE CONTACT -->
-<section class="contact">
-  <h2>📋 Vous avez un rêve ou un projet ?</h2>
-  <p>Chez FRANS GLOBAL, nous croyons en votre potentiel. Partagez votre idée, inscrivez‑vous ou posez vos questions !</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn-zrarw9BvU0SzRG-RAiqp3k7t5JsXPYFfdaF4MiqD5pQqA/viewform?usp=dialog" title="Formulaire d'inscription FRANS GLOBAL" loading="lazy">Chargement…</iframe>
-  <p style="text-align:center">
-    <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank">📲 Contactez‑nous sur WhatsApp</a>
-  </p>
-</section>
+    <!-- FORMULAIRE DE CONTACT -->
+    <section class="contact">
+      <h2>📋 Vous avez un rêve ou un projet ?</h2>
+      <p>Chez FRANS GLOBAL, nous croyons en votre potentiel. Partagez votre idée, inscrivez‑vous ou posez vos questions !</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn-zrarw9BvU0SzRG-RAiqp3k7t5JsXPYFfdaF4MiqD5pQqA/viewform?usp=dialog" title="Formulaire d'inscription FRANS GLOBAL" loading="lazy">Chargement…</iframe>
+      <p style="text-align:center">
+        <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank">📲 Contactez‑nous sur WhatsApp</a>
+      </p>
+    </section>
 
-<!-- ACTUALITÉS -->
-<section id="actualites" style="padding:20px;background:#f8f8f8;">
-  <h2 style="text-align:center">📰 Actualités récentes</h2>
-  <div id="contenu-actus">Loading…</div>
-</section>
+    <!-- ACTUALITÉS -->
+    <section id="actualites" style="padding:20px;background:#f8f8f8;">
+      <h2 style="text-align:center">📰 Actualités récentes</h2>
+      <div id="contenu-actus">Loading…</div>
+    </section>
+  </main>
 
-  </main>  <!-- ===== FOOTER ===== -->  <footer>&copy; 2025&nbsp;FRANS GLOBAL | Tous droits réservés</footer>  <!-- ===== SCRIPTS ===== -->  <script>
-    /* ==== Rotation d'images de fond du header ==== */
+  <!-- ===== FOOTER ===== -->
+  <footer>&copy; 2025&nbsp;FRANS GLOBAL | Tous droits réservés</footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
     const bgImages = [
       'images/images/management.jpg',
-      'images/images/informatique_africain.jpg.jpg',
+      'images/images/informatique_africain.jpg',
       'images/images/Franckson%20office.jpg'
     ];
     let current = 0;
@@ -145,3 +251,8 @@
       document.getElementById('top-header').style.backgroundImage = `url('${bgImages[current]}')`;
       current = (current + 1) % bgImages.length;
     }
+    rotateBackground();
+    setInterval(rotateBackground, 5000);
+  </script>
+</body>
+</html>
