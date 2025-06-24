@@ -125,6 +125,15 @@
       padding-left: 20px;
     }
   </style>
+  <script>
+  // Redirection automatique selon la langue du navigateur
+  if (window.location.pathname.endsWith("index.html")) {
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith("en")) {
+      window.location.href = "index-en.html";
+    }
+  }
+</script>
 </head>
 <body>
   <header id="top-header">
