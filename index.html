@@ -9,9 +9,12 @@
   <meta name="keywords" content="formation, apprentissage pratique, FRANS GLOBAL, plateforme professionnelle, langues, numérique, artisanat, entrepreneuriat, formation Congo kin" />
   <meta name="author" content="FRANS GLOBAL" />
   <meta name="language" content="French" />
+  <meta property="og:title" content="FRANS GLOBAL - Formation numérique et développement" />
+  <meta property="og:description" content="Développez vos compétences pratiques en langues, numérique, entrepreneuriat et services à distance." />
+  <meta property="og:image" content="https://frans-global.github.io/images/logo-rogne.png" />
   <title>FRANS GLOBAL - plateforme de Formation en numérique, communication et développement personnel</title>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H8PNKGW39"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,7 +23,7 @@
     gtag('config', 'G-3H8PNKGW39');
   </script>
 
-  <link rel="icon" href="images/franckson-profile-fb.png" type="image/png" />
+  <link rel="icon" type="image/png" href="images/franckson-profile-fb.png" />
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -58,34 +61,34 @@
     }
 
     .hero {
-      background: #e6f2ff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
+      background:#e6f2ff;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
     }
 
     .hero input[type="text"] {
-      padding: 10px;
-      width: 60%;
-      max-width: 300px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
+      padding:10px;
+      width:60%;
+      max-width:300px;
+      border-radius:5px;
+      border:1px solid #ccc;
+      margin-bottom:10px;
     }
 
     .hero button {
-      background-color: #004080;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
+      background-color:#004080;
+      color:white;
+      padding:10px 20px;
+      border:none;
+      border-radius:5px;
+      font-weight:bold;
+      cursor:pointer;
     }
 
     .services h2 {
       text-align: center;
-      font-size: 32px;
+      font-size: 36px;
       color: #004080;
       margin: 40px 0 20px;
     }
@@ -93,10 +96,7 @@
     .services h3 {
       margin-top: 30px;
       color: #004080;
-    }
-
-    section ul {
-      padding-left: 20px;
+      font-size: 22px;
     }
 
     footer {
@@ -113,42 +113,32 @@
       margin: 0 10px;
     }
 
-    .cta-whatsapp {
-      display: block;
-      text-align: center;
-      margin: 30px auto;
-    }
-
-    .cta-whatsapp a {
-      background: #004080;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-<nav>
-  <a href="index.html">Français</a>
-  <a href="index-en.html">English</a>
-  <a href="formations.html">Formations</a>
-  <a href="a-propos.html">À propos</a>
-  <a href="contact.html">Contact</a>
-  <a href="https://wa.me/243853615905" target="_blank">WhatsApp</a>
-</nav>
+  <nav>
+    <a href="index.html">Français</a>
+    <a href="index-en.html">English</a>
+    <a href="formations.html">Formations</a>
+    <a href="contact.html">Contact</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
 
   <main>
     <!-- SECTION HÉRO -->
     <section class="hero">
-      <h2>🎁 Téléchargez nos ouvrages exclusifs et gratuits !</h2>
+      <h2>🎁 Téléchargez nos ouvrages exclusifs et gratuits!</h2>
       <p style="font-size:16px; font-weight:bold;">Entrez votre contact WhatsApp ou email :</p>
+
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSdevNxQaAEDcVps37WiJfCxzSmu5In5Eit2M5TMmtWPNmU0Ng/formResponse" method="post" target="_blank">
         <input type="text" name="entry.1447096486" placeholder="Votre WhatsApp ou email" required />
         <br>
         <button type="submit">📩 Recevoir maintenant</button>
       </form>
+
       <p style="font-size:14px; color:#666; margin-top:10px;">100% gratuit – Aucun spam.</p>
     </section>
 
@@ -207,19 +197,21 @@
       </ul>
     </section>
 
-    <!-- GAGNEZ DES AUJOURD’HUI -->
+    <!-- GAGNEZ -->
     <section style="margin-top:40px;">
       <h2 style="text-align:center;">Gagnez dès aujourd'hui</h2>
       <ul style="font-size:17px;">
-        <li><a href="https://shrinkme.ink/woAm1" target="_blank">📘 Téléchargez nos ressources gratuites (PDF)</a></li>
-        <li><a href="https://shrinkme.ink/woAm1" target="_blank">💸 Apprenez à gagner de l'argent en ligne</a></li>
+        <li><a href="ressources.html">📘 Nos ressources gratuites (PDF)</a></li>
+        <li><a href="gagner-en-ligne.html">💸 Comment gagner de l'argent en ligne</a></li>
       </ul>
     </section>
 
-    <!-- CONTACT WHATSAPP -->
-    <div class="cta-whatsapp">
-      <a href="https://wa.me/243853615905" target="_blank">📲 Contactez-nous via WhatsApp</a>
-    </div>
+    <!-- BOUTON WHATSAPP CTA -->
+    <p style="text-align:center; margin-top:25px;">
+      <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank" style="background:#004080;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;">
+        📲 Contactez-nous via WhatsApp
+      </a>
+    </p>
 
     <!-- ACTUALITÉS -->
     <section id="actualites" style="padding:20px;background:#f8f8f8;margin-top:40px;">
