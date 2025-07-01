@@ -10,7 +10,7 @@
   <meta name="author" content="FRANS GLOBAL" />
   <meta name="language" content="French" />
   <title>FRANS GLOBAL - plateforme de Formation en numérique, communication et développement personnel</title>
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H8PNKGW39"></script>
   <script>
@@ -20,7 +20,7 @@
     gtag('config', 'G-3H8PNKGW39');
   </script>
 
-  <link rel="icon" type="image/png" href="images/franckson-profile-fb.png" />
+  <link rel="icon" href="images/franckson-profile-fb.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
@@ -58,29 +58,29 @@
     }
 
     .hero {
-      background:#e6f2ff;
-      padding:20px;
-      border-radius:10px;
-      text-align:center;
+      background: #e6f2ff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
     }
 
     .hero input[type="text"] {
-      padding:10px;
-      width:60%;
-      max-width:300px;
-      border-radius:5px;
-      border:1px solid #ccc;
-      margin-bottom:10px;
+      padding: 10px;
+      width: 60%;
+      max-width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
     }
 
     .hero button {
-      background-color:#004080;
-      color:white;
-      padding:10px 20px;
-      border:none;
-      border-radius:5px;
-      font-weight:bold;
-      cursor:pointer;
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .services h2 {
@@ -93,6 +93,10 @@
     .services h3 {
       margin-top: 30px;
       color: #004080;
+    }
+
+    section ul {
+      padding-left: 20px;
     }
 
     footer {
@@ -109,8 +113,19 @@
       margin: 0 10px;
     }
 
-    ul {
-      padding-left: 20px;
+    .cta-whatsapp {
+      display: block;
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    .cta-whatsapp a {
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -125,24 +140,15 @@
   <main>
     <!-- SECTION HÉRO -->
     <section class="hero">
-      <h2>🎁 Téléchargez nos ouvrages exclusifs et gratuits!</h2>
-      <p style="font-size:18px;">Recevez nos guides PDF et vidéos.</p>
+      <h2>🎁 Téléchargez nos ouvrages exclusifs et gratuits !</h2>
       <p style="font-size:16px; font-weight:bold;">Entrez votre contact WhatsApp ou email :</p>
-
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSdevNxQaAEDcVps37WiJfCxzSmu5In5Eit2M5TMmtWPNmU0Ng/formResponse" method="post" target="_blank">
         <input type="text" name="entry.1447096486" placeholder="Votre WhatsApp ou email" required />
         <br>
         <button type="submit">📩 Recevoir maintenant</button>
       </form>
-
       <p style="font-size:14px; color:#666; margin-top:10px;">100% gratuit – Aucun spam.</p>
     </section>
-
-    <p style="text-align:center; margin-top:20px;">
-      <a class="btn-whatsapp" href="https://wa.me/243853615905" target="_blank" style="background:#004080;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;">
-        📲 Contactez-nous via WhatsApp
-      </a>
-    </p>
 
     <!-- SERVICES -->
     <section class="services">
@@ -199,6 +205,7 @@
       </ul>
     </section>
 
+    <!-- GAGNEZ DES AUJOURD’HUI -->
     <section style="margin-top:40px;">
       <h2 style="text-align:center;">Gagnez dès aujourd'hui</h2>
       <ul style="font-size:17px;">
@@ -206,6 +213,11 @@
         <li><a href="https://shrinkme.ink/woAm1" target="_blank">💸 Apprenez à gagner de l'argent en ligne</a></li>
       </ul>
     </section>
+
+    <!-- CONTACT WHATSAPP -->
+    <div class="cta-whatsapp">
+      <a href="https://wa.me/243853615905" target="_blank">📲 Contactez-nous via WhatsApp</a>
+    </div>
 
     <!-- ACTUALITÉS -->
     <section id="actualites" style="padding:20px;background:#f8f8f8;margin-top:40px;">
