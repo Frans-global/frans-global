@@ -1,1 +1,3 @@
-https://search.google.com/search-console
+User-agent: *
+Allow: /
+Sitemap: https://frans-global.github.io/sitemap.xml
