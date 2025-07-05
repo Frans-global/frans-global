@@ -62,33 +62,6 @@
       padding: 20px;
     }
 
-    .hero {
-      background: #e6f2ff;
-      padding: 25px 20px;
-      border-radius: 10px;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .hero input[type="text"] {
-      padding: 10px;
-      width: 60%;
-      max-width: 300px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-    }
-
-    .hero button {
-      background-color: #004080;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
     .services h2 {
       text-align: center;
       font-size: 38px;
@@ -108,6 +81,33 @@
 
     section ul li {
       margin-bottom: 8px;
+    }
+
+    .hero {
+      background: #e6f2ff;
+      padding: 25px 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .hero input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
@@ -131,21 +131,14 @@
     <a href="index-en.html">English</a>
     <a href="formations.html">Formations</a>
     <a href="contact.html">Contact</a>
-    <a href="a-propos.html">À propos</a>
+    <a href="apropos.html">À propos</a>
   </nav>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <h2>🎁 Téléchargez nos ouvrages gratuits!</h2>
-      <p style="font-weight:bold;">Entrez votre contact WhatsApp ou email :</p>
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSdevNxQaAEDcVps37WiJfCxzSmu5In5Eit2M5TMmtWPNmU0Ng/formResponse" method="post" target="_blank">
-        <input type="text" name="entry.1447096486" placeholder="Votre WhatsApp ou email" required />
-        <br />
-        <button type="submit">📩 Recevoir maintenant</button>
-      </form>
-      <p style="font-size:14px; color:#666; margin-top:10px;">100% gratuit – Aucun spam.</p>
-    </section>
+    <!-- IMAGE ILLUSTRATION -->
+    <div style="text-align:center; margin-top:30px;">
+      <img src="images/informatique.jpg" alt="Formation Informatique" style="max-width:100%; border-radius:10px;" />
+    </div>
 
     <!-- SERVICES -->
     <section class="services">
@@ -202,6 +195,18 @@
       </ul>
     </section>
 
+    <!-- FORMULAIRE GRATUIT -->
+    <section class="hero">
+      <h2>🎁 Téléchargez nos ouvrages gratuits !</h2>
+      <p style="font-weight:bold;">Entrez votre contact WhatsApp ou email :</p>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSdevNxQaAEDcVps37WiJfCxzSmu5In5Eit2M5TMmtWPNmU0Ng/formResponse" method="post" target="_blank">
+        <input type="text" name="entry.1447096486" placeholder="Votre WhatsApp ou email" required />
+        <br />
+        <button type="submit">📩 Recevoir maintenant</button>
+      </form>
+      <p style="font-size:14px; color:#666; margin-top:10px;">100% gratuit – Aucun spam.</p>
+    </section>
+
     <!-- GAGNEZ -->
     <section style="margin-top:40px;">
       <h2 style="text-align:center;">Gagnez dès aujourd'hui</h2>
@@ -211,7 +216,7 @@
       </ul>
     </section>
 
-    <!-- BOUTON WHATSAPP CTA -->
+    <!-- WHATSAPP -->
     <p style="text-align:center; margin-top:25px;">
       <a href="https://wa.me/243853615905" target="_blank" style="background:#004080;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;">
         📲 Contactez-nous via WhatsApp
