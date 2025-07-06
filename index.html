@@ -251,7 +251,48 @@
   </div>
   <p style="text-align:center; font-size:14px; margin-top:10px; color:#555;">Lien affilié – Aucun coût supplémentaire pour vous</p>
 </section>
+<!-- 🔥 Annonce concours anglais -->
+<section style="background:#fff9e6; border:2px solid #ffd700; padding:25px; border-radius:10px; margin-top:40px;">
+  <h2 style="text-align:center; color:#b8860b;">🎯 Concours d’Anglais de Base</h2>
+  <p style="text-align:center; font-size:16px;">
+    Participez au grand concours d’anglais de FRANS GLOBAL !<br>
+    Test officiel le <strong>samedi 12 juillet 2025</strong>.
+  </p>
 
+  <!-- Compteur -->
+  <div id="countdown" style="text-align:center; font-size:20px; font-weight:bold; color:#d35400; margin-top:15px;"></div>
+
+  <!-- Lien vers la page du concours -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="concours.html" style="background:#007BFF; color:white; padding:10px 20px; text-decoration:none; border-radius:8px; font-weight:bold;">
+      🔎 Voir les détails du concours
+    </a>
+  </div>
+</section>
+
+<script>
+// Définir la date du concours
+const targetDate = new Date("2025-07-12T14:00:00").getTime();
+
+const countdown = document.getElementById("countdown");
+
+const interval = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance < 0) {
+    clearInterval(interval);
+    countdown.innerHTML = "⏰ Le test est en cours ou terminé.";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  
+  countdown.innerHTML = `🕒 Il reste <strong>${days} jours</strong>, ${hours}h ${minutes}min avant le test`;
+}, 1000);
+</script>
     <!-- ACTUALITÉS -->
     <section id="actualites" style="background-color:#f4f8fc; padding:40px 20px; margin-top:50px;">
   <h2 style="text-align:center; color:#004080; font-size:30px;">📰 Dernières Actualités</h2>
