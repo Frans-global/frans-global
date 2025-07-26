@@ -5,20 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Assistant FRANS Global</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    body {
       background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background-color: #0a2342;
       color: white;
       padding: 1rem;
       text-align: center;
+      flex-shrink: 0;
     }
     iframe {
+      flex-grow: 1;
       width: 100%;
-      height: 92vh;
       border: none;
     }
   </style>
@@ -26,7 +33,7 @@
 <body>
 
   <header>
-    <h1>🤖 Assistant FRANS Global Technologies</h1>
+    <h1>Assistant FRANS Global Technologies</h1>
     <p>Posez votre question sur nos services, formations ou assistance technique</p>
   </header>
 
