@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRANS Global Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fc;
+      margin: 0;
+      padding: 0;
+    }
+    .chat-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; color: #004080; }
+    #chat {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .msg {
+      margin: 10px 0;
+    }
+    .user { text-align: right; color: #004080; }
+    .bot { text-align: left; color: #333; }
+    form {
+      display: flex;
+      gap: 10px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>🤖 FRANS Global Assistant</h2>
+    <div id="chat">
+      <div class="msg bot">Bonjour 👋 Je suis le FRANS Global Assistant. Comment puis-je vous aider aujourd’hui ? 🇫🇷🇬🇧</div>
+    </div>
+    <form id="form">
+      <input type="text" id="userInput" placeholder="Posez votre question ici..." required />
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>  <script>
+    const chat = document.getElementById("chat");
+    const form = document.getElementById("form");
+    const input = document.getElementById("userInput");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const userText = input.value.trim();
+      if (!userText) return;
+      chat.innerHTML += `<div class='msg user'>${userText}</div>`;
+      input.value = "";
+      chat.scrollTop = chat.scrollHeight;
+
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer VOTRE_CLE_API"
+        },
+        body: JSON.stringify({
+          model: "gpt-3.5-turbo",
+          messages: [
+            { role: "system", content: `You are FRANS Global Assistant, a professional AI assistant for FRANS GLOBAL TECHNOLOGIES (FGT). Respond in French or English depending on user's input. Guide visitors about services (ICT, languages, entrepreneurship, etc.). Be inspiring, polite and helpful.` },
+            { role: "user", content: userText }
+          ]
+        })
+      });
+
+      const data = await response.json();
+      const botReply = data.choices?.[0]?.message?.content || "Je suis désolé, une erreur est survenue.";
+      chat.innerHTML += `<div class='msg bot'>${botReply}</div>`;
+      chat.scrollTop = chat.scrollHeight;
+    });
+  </script></body>
+    </html>
